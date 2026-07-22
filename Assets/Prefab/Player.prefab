@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6375074577076903456}
   - component: {fileID: 8745323252117788744}
   - component: {fileID: 5886397498787840977}
+  - component: {fileID: 2316417158431552323}
   m_Layer: 0
   m_Name: InteractCircle
   m_TagString: Untagged
@@ -107,6 +108,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Interact
   maxTime: 0.25
   timer: 0
+--- !u!58 &2316417158431552323
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592435910652508985}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.50000006
 --- !u!1 &6400758736582867592
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +203,7 @@ SpriteRenderer:
   m_SmallMeshCulling: 1
   m_ForceMeshLod: -1
   m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -188,12 +225,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1656941467
+  m_SortingLayer: 1
+  m_SortingOrder: 100
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.32666862, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -245,7 +282,10 @@ MonoBehaviour:
   moveSpeed: 4
   isAttacking: 0
   isInteract: 0
+  canMove: 0
   interCir: {fileID: 3592435910652508985}
+  broom: {fileID: 5184387954514931037, guid: 76fd8e425cbaf2544b6fca40a99e8b76, type: 3}
+  playerLooking: 0
 --- !u!61 &5330882666466409800
 BoxCollider2D:
   m_ObjectHideFlags: 0
