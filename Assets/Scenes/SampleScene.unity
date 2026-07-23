@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000009bebc262
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -341,7 +341,11 @@ MonoBehaviour:
         m_SelectedSource:
           rid: -2
         m_Provider2DCache:
-          rid: -2
+          rid: 7778827578735067339
+    - rid: 7778827578735067339
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -371,11 +375,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8872925651064799203, guid: 07647de9f7b96f74589021bb71618942, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02989
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8872925651064799203, guid: 07647de9f7b96f74589021bb71618942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0063
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8872925651064799203, guid: 07647de9f7b96f74589021bb71618942, type: 3}
       propertyPath: m_LocalPosition.z
