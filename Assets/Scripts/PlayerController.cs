@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
     public void OnMove(InputAction.CallbackContext context) {
         if (canMove) {
             moveInput = context.ReadValue<Vector2>();
-            Debug.Log(moveInput);
             if (moveInput == Vector2.down) {
                 playerLooking = 0;
             }
@@ -46,6 +45,9 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
             else if (moveInput == Vector2.left) {
                 playerLooking = 3;
             }
+        }
+        else {
+            moveInput = Vector2.zero;
         }
     }
 
@@ -85,6 +87,7 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
 
         if (isAttacking) {
             canMove = false;
+            rb.linearVelocity = Vector2.zero;
         }
         else {
             canMove = true;
