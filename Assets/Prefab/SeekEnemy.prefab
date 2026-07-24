@@ -256,6 +256,7 @@ MonoBehaviour:
   moveSpeed: 2
   step: 0
   rb: {fileID: 1797586440473550480}
+  health: 1
 --- !u!61 &1022593463190972823
 BoxCollider2D:
   m_ObjectHideFlags: 0

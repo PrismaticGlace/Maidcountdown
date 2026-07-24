@@ -6,6 +6,7 @@ public class SeekEnemy : MonoBehaviour {
     public float moveSpeed;
     [SerializeField] private float step;
     [SerializeField] private Rigidbody2D rb;
+    public int health;
 
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -20,5 +21,18 @@ public class SeekEnemy : MonoBehaviour {
         else {
             step = 0;
         }
+
+        if (health <= 0) {
+            Destroy(gameObject);
+        }
+
     }
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("PlayerAttack")) {
+            health--;
+        }
+    }
+
+
 }

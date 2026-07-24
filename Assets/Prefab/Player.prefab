@@ -279,13 +279,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81034d35d06643d4299e65f1cfb753f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 4
+  moveSpeed: 6
   isAttacking: 0
   isInteract: 0
   canMove: 0
   interCir: {fileID: 3592435910652508985}
   broom: {fileID: 5184387954514931037, guid: 76fd8e425cbaf2544b6fca40a99e8b76, type: 3}
   playerLooking: 0
+  playerHealth: 0
 --- !u!61 &5330882666466409800
 BoxCollider2D:
   m_ObjectHideFlags: 0

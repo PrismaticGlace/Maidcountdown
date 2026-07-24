@@ -6,6 +6,7 @@ public class PatrolEnemy : MonoBehaviour {
     [SerializeField] private float step;
     public Vector2[] destinations;
     public int currDes;
+    public int health;
 
     void Update() {
         step = moveSpeed * Time.deltaTime;
@@ -21,15 +22,16 @@ public class PatrolEnemy : MonoBehaviour {
                 }
             }
         }
+
+        if (health <= 0) {
+            Destroy(gameObject);
+        }
+
     }
 
-    //void OnCollisionEnter(Collision collision) {
-    //    if (collision.gameObject.CompareTag("Wall")) {
-    //        currDes++;
-    //        step = 0;
-    //        if (currDes > (destinations.Length -1)) {
-    //            currDes = 0;
-    //        }
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("PlayerAttack")) {
+            health--;
+        }
+    }
 }
