@@ -8,6 +8,8 @@ TagManager:
   - PlayerAttack
   - Wall
   - Interact
+  - EnemyProjectile
+  - Area
   layers:
   - Default
   - TransparentFX

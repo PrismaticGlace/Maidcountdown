@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
     public GameObject interCir;
     public GameObject broom;
     public int playerLooking;
+    public int playerHealth;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -99,5 +100,21 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
 
         playerpos.x = transform.position.x;
         playerpos.y = transform.position.y;
+
+        //Game Over here
+
     }
+
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Enemy")) {
+            playerHealth--;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("EnemyProjectile")) {
+            playerHealth--;
+        }
+    }
+
 }
