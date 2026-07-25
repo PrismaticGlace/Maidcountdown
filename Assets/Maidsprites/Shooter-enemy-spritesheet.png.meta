@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: b38ad585506f79542917e8584ba6012b
+guid: 006b1dc832996334897fdb54ab240f08
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2092333355978306974
-    second: MaidRight1_0
+      213: -3867123764467855479
+    second: Shooter-enemy-spritesheet_0
+  - first:
+      213: 1997935023341114134
+    second: Shooter-enemy-spritesheet_1
+  - first:
+      213: 4821759065273763940
+    second: Shooter-enemy-spritesheet_2
+  - first:
+      213: 6983467326224207795
+    second: Shooter-enemy-spritesheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -38,7 +47,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 5
+    aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,42 +105,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MaidRight1_0
+      name: Shooter-enemy-spritesheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 12
+        x: 1
+        y: 17
+        width: 14
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -141,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26a463df5e986f2e0800000000000000
-      internalID: -2092333355978306974
+      spriteID: 98f0c64dc67355ac0800000000000000
+      internalID: -3867123764467855479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shooter-enemy-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6131f8671571abb10800000000000000
+      internalID: 1997935023341114134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shooter-enemy-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4688926b2545ae240800000000000000
+      internalID: 4821759065273763940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shooter-enemy-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf042088824ae060800000000000000
+      internalID: 6983467326224207795
       vertices: []
       indices: 
       edges: []
@@ -151,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b77f039683ce1e34796346dd7c4192ba
+    spriteID: 9239c2c1c828c5f41a2cba3883d56fa6
     internalID: 0
     vertices: []
     indices: 
@@ -161,9 +210,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MaidRight1_0: -2092333355978306974
+      Shooter-enemy-spritesheet_0: -3867123764467855479
+      Shooter-enemy-spritesheet_1: 1997935023341114134
+      Shooter-enemy-spritesheet_2: 4821759065273763940
+      Shooter-enemy-spritesheet_3: 6983467326224207795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
