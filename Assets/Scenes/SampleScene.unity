@@ -1354,12 +1354,28 @@ PrefabInstance:
       value: MoveSwitch
       objectReference: {fileID: 0}
     - target: {fileID: 7369526240775018602, guid: 27bbf3ab385a5984abc9b67fb5d30560, type: 3}
+      propertyPath: buttonSwitch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369526240775018602, guid: 27bbf3ab385a5984abc9b67fb5d30560, type: 3}
       propertyPath: switchObject
       value: 
       objectReference: {fileID: 1447627132}
     - target: {fileID: 7369526240775018602, guid: 27bbf3ab385a5984abc9b67fb5d30560, type: 3}
       propertyPath: positions.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369526240775018602, guid: 27bbf3ab385a5984abc9b67fb5d30560, type: 3}
+      propertyPath: positions.Array.data[0].x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369526240775018602, guid: 27bbf3ab385a5984abc9b67fb5d30560, type: 3}
+      propertyPath: positions.Array.data[1].x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369526240775018602, guid: 27bbf3ab385a5984abc9b67fb5d30560, type: 3}
+      propertyPath: positions.Array.data[1].y
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
