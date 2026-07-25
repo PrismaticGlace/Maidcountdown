@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
@@ -106,8 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a916044831ec9e4588d2516b338ab7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  enableButton: 0
+  bothButton: 0
+  buttonObject: {fileID: 0}
   pressed: 0
-  objectDisable: {fileID: 0}
 --- !u!61 &-3453039471363347808
 BoxCollider2D:
   m_ObjectHideFlags: 0
