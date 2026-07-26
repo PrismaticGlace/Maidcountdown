@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8434029630048386929}
   - component: {fileID: 4776448370040342280}
   - component: {fileID: 7334377452593477607}
+  - component: {fileID: 3900671089298042500}
   m_Layer: 0
   m_Name: PatrolEnemy
   m_TagString: Enemy
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 50
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 7772528497571434816, guid: a6dd76bec9a2a574087463d0e32f0167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -182,10 +183,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   moveSpeed: 10
   step: 0
-  destinations:
-  - {x: 15.5, y: 8.5}
-  - {x: 15.5, y: -8.5}
-  - {x: -15.5, y: -8.5}
-  - {x: -15.5, y: 8.5}
+  destinations: []
   currDes: 0
   health: 1
+--- !u!95 &3900671089298042500
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909412241243467596}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a72c72f2c2a49e45b2ed1c3aef51ede, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

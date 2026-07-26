@@ -36,15 +36,19 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
             moveInput = context.ReadValue<Vector2>();
             if (moveInput == Vector2.down) {
                 playerLooking = 0;
+                anim.SetBool("Up", false);
             }
             else if (moveInput == Vector2.right) {
                 playerLooking = 1;
+                anim.SetBool("Up", false);
             }
             else if (moveInput == Vector2.up) {
                 playerLooking = 2;
+                anim.SetBool("Up", true);
             }
             else if (moveInput == Vector2.left) {
                 playerLooking = 3;
+                anim.SetBool("Up", false);
             }
         }
         else {
