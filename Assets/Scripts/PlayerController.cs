@@ -120,14 +120,6 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
 
         //Game Over here
         healthText.text = "Health: " + playerHealth;
-
-        Scene sce = SceneManager.GetActiveScene();
-
-        if (playerHealth <= 0) {
-            if (sce == SceneManager.GetSceneByName("Floor 5")) {
-                SceneManager.LoadScene("Floor 5");
-            }
-        }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {

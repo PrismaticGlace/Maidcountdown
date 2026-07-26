@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   hitbox: {fileID: 5590704509017774893}
   timer: 0
-  maxTime: 1
+  maxTime: 0.25
 --- !u!1 &5590704509017774893
 GameObject:
   m_ObjectHideFlags: 0
