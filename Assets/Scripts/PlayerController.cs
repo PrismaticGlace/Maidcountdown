@@ -1,6 +1,7 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions {
@@ -12,7 +13,7 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
     private Vector2 moveInput;
     private Vector3 playerpos;
     private PlayerInputActions pia;
-    private Animator anim;
+    public Animator anim;
     private SpriteRenderer sr;
     [SerializeField] private bool isAttacking;
     public bool isInteract;
@@ -22,6 +23,9 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
     public int playerLooking;
     public int playerHealth;
 
+    public GameObject settings;
+    public bool settingsOpen;
+    public TMPro.TMP_Text healthText;
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
@@ -82,7 +86,16 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
         if (context.started) isInteract = true;
         else if (context.canceled) isInteract = false;
     }
-    
+
+    public void OnSettings(InputAction.CallbackContext context) {
+        if (settingsOpen == true) {
+            settings.SetActive(false);
+        }
+        else {
+            settings.SetActive(true);
+        }
+    }
+
     void FixedUpdate() {
         rb.linearVelocity = moveInput * moveSpeed;
         //Animation here
@@ -106,7 +119,15 @@ public class PlayerController : MonoBehaviour, PlayerInputActions.IPlayerActions
         playerpos.y = transform.position.y;
 
         //Game Over here
+        healthText.text = "Health: " + playerHealth;
 
+        Scene sce = SceneManager.GetActiveScene();
+
+        if (playerHealth <= 0) {
+            if (sce == SceneManager.GetSceneByName("Floor 5")) {
+                SceneManager.LoadScene("Floor 5");
+            }
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {

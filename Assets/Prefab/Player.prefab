@@ -281,13 +281,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 6
+  anim: {fileID: -2353695246788696122}
   isAttacking: 0
   isInteract: 0
   canMove: 0
   interCir: {fileID: 3592435910652508985}
   broom: {fileID: 5184387954514931037, guid: 76fd8e425cbaf2544b6fca40a99e8b76, type: 3}
   playerLooking: 0
-  playerHealth: 0
+  playerHealth: 3
+  settings: {fileID: 0}
+  settingsOpen: 0
+  healthText: {fileID: 0}
 --- !u!61 &5330882666466409800
 BoxCollider2D:
   m_ObjectHideFlags: 0
